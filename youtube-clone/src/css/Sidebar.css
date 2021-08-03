@@ -1,3 +1,12 @@
 .sidebar {
   flex: 0.2;
+  z-index: 99;
+}
+
+.sidebar > hr {
+  background-color: lightgray;
+  height: 1px;
+  margin-top: 10px;
+  border: 0;
+  margin-bottom: 10px;
 }

@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import HomeIcon from "@material-ui/icons/Home";
+import "./css/SidebarRow.css";
 
-function SidebarRow() {
-    return (
-        <div>
-            
-        </div>
-    )
+function SidebarRow(props) {
+  return (
+    <div className={`sidebarRow ${props.selected && "selected"}`}>
+      <props.Icon className="sidebarRow_icon" />
+      <p className="sidebarRow_title">{props.title}</p>
+    </div>
+  );
 }
 
-export default SidebarRow
+export default SidebarRow;
